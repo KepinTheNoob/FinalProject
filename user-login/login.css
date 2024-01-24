@@ -8,6 +8,9 @@
 body {
     height: 100vh;
     background: linear-gradient(rgb(40, 40, 40), gray);
+
+    display: flex;
+    justify-content: center;
 }
 
 #login-page {
@@ -15,7 +18,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 42px;
 }
 
@@ -31,7 +33,13 @@ body {
     gap: 28px;
 }
 
+#login-form img {
+    width: 24px;
+    height: auto;
+}
+
 #login-title {
+    margin-left: 1%;
     color: white;
 }
 
@@ -52,7 +60,7 @@ body {
     padding: 0 0 0 15px;
     font-weight: 700;
     color: white;
-    
+
     background: none;
     border-radius: 15px;
     border: 3px solid #2B82D8;
@@ -63,16 +71,9 @@ body {
     margin: 0 0 6px 12px;
     display: flex;
     gap: 8px;
+
     color: white;
-}
-
-.icon-email label {
     font-weight: 700;
-}
-
-.icon-email img {
-    width: 24px;
-    height: auto;
 }
 
 .form-password input {
@@ -81,7 +82,7 @@ body {
     padding: 0 0 0 15px;
     font-weight: 700;
     color: white;
-    
+
     background: none;
     border-radius: 15px;
     border: 3px solid #2B82D8;
@@ -92,16 +93,14 @@ body {
     margin: 0 0 6px 12px;
     display: flex;
     gap: 8px;
+
+    font-weight: 700;
     color: white;
 }
 
-.icon-password label {
-    font-weight: 700;
-}
-
-.icon-password img {
-    width: 24px;
-    height: auto;
+::placeholder {
+    color: white;
+    opacity: 50%;
 }
 
 #forgot-password {
