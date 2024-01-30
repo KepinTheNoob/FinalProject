@@ -1,0 +1,35 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hack-facebook 2">
+<g clip-path="url(#clip0_646_1449)">
+<g id="Mask group">
+<mask id="mask0_646_1449" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+<g id="Group">
+<g id="Clip path group">
+<mask id="mask1_646_1449" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+<g id="clip0_4554_9590">
+<path id="Vector" d="M70 0H0V70H70V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask1_646_1449)">
+<g id="Group_2">
+<path id="Vector_2" d="M70 35C70 15.67 54.3299 0 35 0C15.67 0 0 15.67 0 35C0 52.4692 12.7989 66.9491 29.5312 69.5748V45.1172H20.6445V35H29.5312V27.2891C29.5312 18.5172 34.7567 13.6719 42.7512 13.6719C46.5795 13.6719 50.5859 14.3555 50.5859 14.3555V22.9688H46.1727C41.825 22.9688 40.4688 25.667 40.4688 28.4375V35H50.1758L48.624 45.1172H40.4688V69.5748C57.2011 66.9491 70 52.4692 70 35Z" fill="#F4F4F4"/>
+</g>
+</g>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_646_1449)">
+<g id="Group_3">
+<path id="Vector_3" d="M82.8943 -7.36816H-14.7373V75.5265H82.8943V-7.36816Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<rect x="0.5" y="0.5" width="69" height="69" stroke="black"/>
+</g>
+<defs>
+<clipPath id="clip0_646_1449">
+<rect width="70" height="70" fill="white"/>
+</clipPath>
+</defs>
+</svg>
