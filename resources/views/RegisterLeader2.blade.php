@@ -44,7 +44,7 @@
                             <img src="assets/Resume.png" alt="icon">
                             <label for="cv">Upload CV</label>
                         </div>
-                        <input type="file" name="cv" id="cv" value="{{old('cv')}}">
+                        <input type="file" name="cv" id="cv" value="{{old('cv')}}" >
                         @error('cv')
                             <p>{{$message}}</p>
                         @enderror

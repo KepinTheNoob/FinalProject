@@ -29,3 +29,4 @@ Route::get('/user-dashboard', [App\Http\Controllers\dashboard::class, 'Dashboard
 
 Route::post('/register-leader1', [App\Http\Controllers\LeaderController::class, 'CreateNewLeader']);
 Route::post('/register-leader2', [App\Http\Controllers\LeaderController::class, 'CreateNewLeader2']);
+Route::post('/RegisterGroup1', [App\Http\Controllers\LeaderController::class, 'RegisterGroup']);

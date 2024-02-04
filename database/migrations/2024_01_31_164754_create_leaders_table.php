@@ -13,16 +13,18 @@ return new class extends Migration
     {
         Schema::create('leaders', function (Blueprint $table) {
             $table->id();
-            $table->string('fullname');
-            $table->string('place');
-            $table->date('date');
-            $table->string('email');
-            $table->string('number');
-            $table->string('id_line');
-            $table->string('github');
+            $table->string('fullname')->nullable();
+            $table->string('place')->nullable();
+            $table->date('date')->nullable();
+            $table->string('groupname')->unique();
+            $table->string('password');
+            $table->string('email')->unique()->nullable();
+            $table->string('number')->unique()->nullable();
+            $table->string('id_line')->unique()->nullable();
+            $table->string('github')->nullable();
             $table->timestamps();
         });
-    }
+    }   
 
     /**
      * Reverse the migrations.

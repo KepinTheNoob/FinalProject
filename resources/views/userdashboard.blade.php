@@ -28,17 +28,17 @@
     <div id="dashboard">
         <div id="detail-informations">
             <div id="leader-informations">
-                <h2>Happy Kiyowo</h2>
+                @foreach ($leader as $item)
+                <h2>{{ $item->groupname }}</h2>
                 <div id="leader-details">
                     <h3>Leader Informations</h3>
-                    @foreach ($leader as $item)
                         <div>
                             <span class="sub-header">Name</span>
                             <span class="sub-detail">{{ $item->fullname }}</span>
                         </div>
                         <div>
                             <span class="sub-header">Place and Date of Birth</span>
-                            <span class="sub-detail">{{ $item->place }}, {{ $item->date }}</span>
+                            <span class="sub-detail">{{ $item->place }}, {{ $item->date}}</span>
                         </div>
                         <div>
                             <span class="sub-header">Email</span>
@@ -58,46 +58,46 @@
                         </div>
                         <div>
                             <span class="sub-header">CV</span>
-                            <a href="{{ $item->cv }}" class="sub-link">{{ $item->cv }}</a>
+                            <a href="{{ asset('storage/' . $item->cv) }}" class="sub-link" download>Download CV</a>
                         </div>
                         <div>
                             <span class="sub-header">Flazz / ID Card</span>
-                            <a href="{{ $item->id_card }}" class="sub-link">{{ $item->id_card }}</a>
+                            <a href="{{ asset('storage/' . $item->id_card) }}" class="sub-link" download>Download ID Card</a>
                         </div>
-                    @endforeach
+                    </div>
+                </div>
+                <div id="participant-informations">
+                    <section>
+                        <h2>{{ $item->fullname }}</h2>
+                        <h3>Participant</h3>
+                    </section>
+                    <div>
+                        <span class="sub-header">Place and Date of Birth</span>
+                        <span class="sub-detail">{{ $item->place }}, {{ $item->date}}</span>
+                    </div>
+                    <div>
+                        <span class="sub-header">Email</span>
+                        <span class="sub-detail">{{ $item->email }}</span>
+                    </div>
+                    <div>
+                        <span class="sub-header">Whatsapp Number</span>
+                        <span class="sub-detail">{{ $item->number }}</span>
+                    </div>
+                    <div>
+                        <span class="sub-header">CV</span>
+                        <a href="{{ asset('storage/' . $item->cv) }}" class="sub-link" download>Download CV</a>
+                    </div>
+                    <div>
+                        <span class="sub-header">Flazz / ID Card</span>
+                        <a href="{{ asset('storage/' . $item->id_card) }}" class="sub-link" download>Download ID Card</a>
+                    </div>
+                    <button id="edit-profile" type="submit">
+                        <img src="assets/Create.png" alt="logo">
+                        <span>Edit Profile</span>
+                    </button>
                 </div>
             </div>
-            <div id="participant-informations">
-                <section>
-                    <h2>Zahira Malik</h2>
-                    <h3>Participant</h3>
-                </section>
-                <div>
-                    <span class="sub-header">Place and Date of Birth</span>
-                    <span class="sub-detail">Jakarta, 10 January 2004</span>
-                </div>
-                <div>
-                    <span class="sub-header">Email</span>
-                    <span class="sub-detail">zahira.malik@binus.ac.id</span>
-                </div>
-                <div>
-                    <span class="sub-header">Whatsapp Number</span>
-                    <span class="sub-detail">+62 8123 4567 890</span>
-                </div>
-                <div>
-                    <span class="sub-header">CV</span>
-                    <a href="" class="sub-link">curriculumvitae_ViraYessica</a>
-                </div>
-                <div>
-                    <span class="sub-header">Flazz / ID Card</span>
-                    <a href="" class="sub-link">FlazzCard_ViraYessica</a>
-                </div>
-                <button id="edit-profile" type="submit">
-                    <img src="assets/Create.png" alt="logo">
-                    <span>Edit Profile</span>
-                </button>
-            </div>
-        </div>
+            @endforeach
         <div id="timeline">
             <div id="header-timeline">
                 <span></span>

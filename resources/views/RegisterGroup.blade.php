@@ -36,67 +36,68 @@
                 <a href="">Leader Information</a>
             </div>
             <div class="fill-form">
-                <form id="group-form" action="">
-                    <!-- NAME -->
-                    <div class="form-group">
-                        <div class="icon-group">
-                            <img src="assets/Badge.png" alt="icon">
-                            <label for="groupname">Group Name</label>
-                        </div>
-                        <input type="text" name="" id="groupname" placeholder="Exp. happycode">
-                        
-                    </div>
-
-                    <!-- PASSWORD -->
-                    <div class="form-password">
-                        <div class="icon-password">
-                            <img src="assets/Password Key.png" alt="icon">
-                            <label for="password">Password</label>
-                        </div>
-                        <input type="password" name="" id="password" placeholder="Exp. b!Nu$20033">
-                        <p id="error-password" class="error-message"></p>
-
-                        <div class="password-requirements">
-                            <span>*Minimum Length 8 characters</span>
-                            <span>*Must have Uppercase Letter</span>
-                            <span>*Must have Lowercase Letter</span>
-                            <span>*Must have Numbers</span>
-                            <span>*Must have Special characters</span>
-                        </div>
-                    </div>
-
-
-                    <!-- CONFIRM PASSWORD -->
-                    <div class="form-confirm-password">
-                        <div class="icon-password">
-                            <img src="assets/Password Key.png" alt="icon">
-                            <label for="confirm-password">Confirm Password</label>
-                        </div>
-                        <input type="password" name="" id="confirm-password" placeholder="Exp. b!Nu$20033">
-                        <p id="error-confirm-password" class="error-message"></p>
-                    </div>
-
-                    <!-- CONFIRM BINUSIAN -->
-                    <div class="form-radio">
-                        <div class="icon-radio">
-                            <img src="assets/MySpace.png" alt="icon">
-                            <label for="confirm-binusian">Binusian or non Binusian</label>
-                        </div>
-                        <div class="radio-btn">
-                            <div>
-                                <input type="radio" name="radio-btn">
-                                <span>Binusian</span>
+                <form id="group-form" action="{{ url('/RegisterGroup1') }}" method = "POST">
+                    @csrf
+                        <!-- NAME -->
+                        <div class="form-group">
+                            <div class="icon-group">
+                                <img src="assets/Badge.png" alt="icon">
+                                <label for="groupname">Group Name</label>
                             </div>
-                            <div>
-                                <input type="radio" name="radio-btn">
-                                <span>Non - Binusian</span>
+                            <input type="text" name="groupname" id="groupname" placeholder="Exp. happycode">
+                            
+                        </div>
+
+                        <!-- PASSWORD -->
+                        <div class="form-password">
+                            <div class="icon-password">
+                                <img src="assets/Password Key.png" alt="icon">
+                                <label for="password">Password</label>
+                            </div>
+                            <input type="password" name="password" id="password" placeholder="Exp. b!Nu$20033">
+                            <p id="error-password" class="error-message"></p>
+
+                            <div class="password-requirements">
+                                <span>*Minimum Length 8 characters</span>
+                                <span>*Must have Uppercase Letter</span>
+                                <span>*Must have Lowercase Letter</span>
+                                <span>*Must have Numbers</span>
+                                <span>*Must have Special characters</span>
                             </div>
                         </div>
-                        <p id="error-confirm-binusian" class="error-message"></p>
-                    </div>
 
-                    <!-- NEXT -->
-                    <button id="next-btn-1" type="submit">Next</button>
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="form-confirm-password">
+                            <div class="icon-password">
+                                <img src="assets/Password Key.png" alt="icon">
+                                <label for="confirm-password">Confirm Password</label>
+                            </div>
+                            <input type="password" name="password" id="confirm-password" placeholder="Exp. b!Nu$20033">
+                            <p id="error-confirm-password" class="error-message"></p>
+                        </div>
+
+                        <!-- CONFIRM BINUSIAN -->
+                        <div class="form-radio">
+                            <div class="icon-radio">
+                                <img src="assets/MySpace.png" alt="icon">
+                                <label for="confirm-binusian">Binusian or non Binusian</label>
+                            </div>
+                            <div class="radio-btn">
+                                <div>
+                                    <input type="radio" name="radio-btn" value="binusian">
+                                    <span>Binusian</span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="radio-btn" value="non-binusian">
+                                    <span>Non - Binusian</span>
+                                </div>
+                            </div>
+                            <p id="error-confirm-binusian" class="error-message"></p>
+                        </div>
+
+                        <!-- NEXT -->
+                        <button id="next-btn-1" type="submit">Next</button>
                 </form>
             </div>
         </div>

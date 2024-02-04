@@ -10,6 +10,8 @@ class leader extends Model
     use HasFactory;
     
     protected $fillable = [
+        'groupname',
+        'password',
         'fullname',
         'place',
         'date',
