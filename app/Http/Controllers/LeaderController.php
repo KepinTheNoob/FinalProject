@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\Models\leader;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Hash;
+// use Session;
 
 class LeaderController extends Controller
 {
@@ -58,6 +60,33 @@ class LeaderController extends Controller
         $request->session()->forget('leader_data');
 
         return redirect('/success-page');
+    }
+
+    public function login(){
+        return view("login");
+    }
+    public function loginUser(Request $request){
+        $request->validate([
+            'email'=>'required|email',
+            'password'=>'required|min:5'
+        ]);
+        $user = leader::where('email', '=', $request->email)->first();
+        if($user){
+            if(Hash::check($request->password, $user->password)){
+                $request->session()->put('loginId', $user->id);
+                return redirect()->route('user-dashboard');
+            } else{
+                return back()->with('fail', 'Password not match.');
+            }
+        } else{
+            return back()->with('fail', 'This email is not registered');
+        }
+    }
+    public function logout(){
+        // if(Session::has('loginId')){
+        //     Session::pull('loginId');
+            return redirect('login');
+        // }
     }
 
     // ...

@@ -19,7 +19,7 @@
         <div id="navlinks">
             <a href="#dashboard">Dashboard</a>
             <a href="#timeline">Timeline</a>
-            <a href="">Sign Out</a>
+            <a href="logout">Sign Out</a>
         </div>
     </div>
 
