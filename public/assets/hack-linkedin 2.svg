@@ -1,0 +1,35 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hack-linkedin 2">
+<g clip-path="url(#clip0_646_1459)">
+<g id="Mask group">
+<mask id="mask0_646_1459" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+<g id="Group">
+<g id="Clip path group">
+<mask id="mask1_646_1459" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+<g id="clip0_4554_9596">
+<path id="Vector" d="M70 0H0V70H70V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask1_646_1459)">
+<g id="Group_2">
+<path id="Vector_2" d="M64.8183 0H5.16797C2.31055 0 0 2.25586 0 5.04492V64.9414C0 67.7305 2.31055 70 5.16797 70H64.8183C67.6758 70 70 67.7305 70 64.955V5.04492C70 2.25586 67.6758 0 64.8183 0ZM20.7675 59.6503H10.3769V26.2364H20.7675V59.6503ZM15.5723 21.6836C12.2363 21.6836 9.54297 18.9903 9.54297 15.668C9.54297 12.3457 12.2363 9.65234 15.5723 9.65234C18.8945 9.65234 21.5878 12.3457 21.5878 15.668C21.5878 18.9766 18.8945 21.6836 15.5723 21.6836ZM59.6503 59.6503H49.2734V43.4083C49.2734 39.5391 49.205 34.5489 43.8731 34.5489C38.4727 34.5489 37.6523 38.7734 37.6523 43.1347V59.6503H27.2891V26.2364H37.2422V30.8028H37.3789C38.7597 28.1778 42.1503 25.4023 47.1953 25.4023C57.7089 25.4023 59.6503 32.3203 59.6503 41.3164V59.6503Z" fill="#F4F4F4"/>
+</g>
+</g>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_646_1459)">
+<g id="Group_3">
+<path id="Vector_3" d="M82.8943 -7.36816H-14.7373V75.5266H82.8943V-7.36816Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<rect x="0.5" y="0.5" width="69" height="69" stroke="black"/>
+</g>
+<defs>
+<clipPath id="clip0_646_1459">
+<rect width="70" height="70" fill="white"/>
+</clipPath>
+</defs>
+</svg>
